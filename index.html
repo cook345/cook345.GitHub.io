@@ -2,58 +2,73 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的页面</title>
+    <title>作业列表</title>
     <style>
-        html, body {
-            height: 100%;
+        * {
             margin: 0;
-            background-color: #f0f2f5;
+            padding: 0;
+            box-sizing: border-box;
             font-family: "Microsoft YaHei", sans-serif;
         }
-
-        /* 数字和链接的容器，放在左上角 */
-        .top-box {
-            position: fixed;
-            top: 16px;
-            left: 24px;
+        body {
+            background: #f5f7fa;
+            padding: 20px;
         }
-
-        .number {
+        /* 左上角学号 */
+        .student-id {
+            position: absolute;
+            top: 20px;
+            left: 20px;
             font-size: 16px;
-            font-weight: bold;
             color: #333;
-            background: white;
-            padding: 8px 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            margin-bottom: 12px; /* 和下方链接保持间距 */
+            font-weight: bold;
         }
-
-        /* 超链接样式 */
-        .link-btn {
-            font-size: 14px;
-            color: #0066cc;
+        /* 中间作业列表 */
+        .container {
+            max-width: 700px;
+            margin: 80px auto 0;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .title {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 25px;
+            color: #222;
+        }
+        .homework-list {
+            list-style: none;
+        }
+        .homework-list li {
+            margin: 14px 0;
+            font-size: 18px;
+        }
+        .homework-list a {
+            color: #2d6cdf;
             text-decoration: none;
-            background: white;
-            padding: 6px 12px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            display: inline-block;
         }
-
-        .link-btn:hover {
-            background: #f0f0f0;
+        .homework-list a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <!-- 数字和链接放在同一个容器里，上下排列 -->
-    <div class="top-box">
-        <div class="number">25051030305</div>
-        <a href="Claude.html" class="link-btn" target="_blank">
-            Claude Code 介绍
-        </a >
+    <!-- 左上角学号 -->
+    <div class="student-id">学号：25051030305</div>
+
+    <!-- 中间作业列表 -->
+    <div class="container">
+        <h2 class="title">课程作业列表</h2>
+        <ul class="homework-list">
+            <li><a href=" " target="_blank">作业1：HTML基础页面</a ></li>
+            <li><a href="homework2.html" target="_blank">作业2：CSS样式设计</a ></li>
+            <li><a href="homework3.html" target="_blank">作业3：JavaScript交互效果</a ></li>
+            <li><a href="homework4.html" target="_blank">作业4：综合网页制作</a ></li>
+            <li><a href="#" target="_blank">期末大作业</a ></li>
+            <li><a href="Claude.html">claude  code介绍</a ></li>
+        </ul>
     </div>
 </body>
 </html>

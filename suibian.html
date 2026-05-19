@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>播放器图标</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #5a3b6b 0%, #b978a8 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 播放器外框 */
+        .player {
+            width: 220px;
+            height: 220px;
+            background: #9a5a8b;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        /* 播放器屏幕边框 */
+        .player-screen {
+            width: 160px;
+            height: 120px;
+            background: #221122;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #332233 0%, #110011 100%);
+        }
+        /* 播放按钮圆形背景 */
+        .play-btn {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 播放三角形 */
+        .play-triangle {
+            width: 0;
+            height: 0;
+            border-top: 18px solid transparent;
+            border-bottom: 18px solid transparent;
+            border-left: 30px solid #221122;
+        }
+    </style>
+</head>
+<body>
+    <div class="player">
+        <div class="player-screen">
+            <div class="play-btn">
+                <div class="play-triangle"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
